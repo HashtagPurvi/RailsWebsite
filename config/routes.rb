@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+TestApp::Application.routes.draw do
   get 'thanks' => 'pages#thanks'
   resources :signups
   root 'signups#new'

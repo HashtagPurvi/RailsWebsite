@@ -1,28 +1,20 @@
-== README
+== README : Pink Panter Photo Contest WebSite for Owens Corning
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Webspage consists of a Form where the user can fill their details and upload the picture. 
+Once the submission is succesfull, the user is redirected to a Thank You Page.
 
-Things you may want to cover:
+Setting up the Project:
 
-* Ruby version
+* Installation :
+	- I installed ruby, sqlite3 and ruby on rails for this project.
 
-* System dependencies
+* As the WebApp consist of a form submission, a model was used to store the data. 
+The model which holds form data is Signup and can be found in app/models directory
 
-* Configuration
+* The signup controller is used to handle request/response cycle.
+The pages controller is used for thank you page.
 
-* Database creation
+* The Routes for home page and thank you page are defined in config/routes.rb.
+The route thanks redirects to thank you page whereas signups#new is set as home page.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* There are 2 views, one view for each controller. The styling for views is done in ic.css

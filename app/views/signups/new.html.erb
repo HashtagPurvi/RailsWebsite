@@ -1,7 +1,7 @@
  <div class="header">
       <div class="container">
         <h1>Pink Panter</h1>
-        <p>Upload ur pics</p>
+        <p>Upload Your Pink Panter Images</p>
         <!-- <img src="../../assets/images/img1.jpg" alt="Owens Corning Pink Panter"> -->
         <a class="btn" href="#">Learn More</a>
       </div>
@@ -16,31 +16,35 @@
     <div class="main">
       <div class="container">
      
-        <h2>Owens Corning's Pink Panther Contest</h2>
-        <p>Owens Corning proudly presents once again the famous Pink Panther Contest.</p>
-        <p>Upload your favourite Pink Panther pictures and Win Cool Surprises !!</p>
-        <p>Fire up your Creativity and show us what you Got. To make it even more better, what if we use your picture as our LOGO </p>
-        <h3>Do you need More reasons to Partiicpate ???</h3>
+        
       </div>
     </div>
 
     <div class="jumbotron">
       <div class="container">
-        <h2>Stay Connected</h2>
-        <p>Receive weekly insights from industry insiders.</p>
-        
+      <h2>Owens Corning's Pink Panther Contest</h2>
+        <p>Owens Corning proudly presents once again the famous Pink Panther Contest.</p>
+        <p>Upload your favourite Pink Panther pictures and Win Cool Surprises !!</p>
+        <p>Fire up your Creativity and show us what you Got. To make it even more better, what if we use your picture as our LOGO </p>
+        <h3>Do you need More reasons to Partiicpate ???</h3>
+        <h2>Fill Out this Form and Upload Your Pic to enter into the Competition</h2>
         
         <!-- Your code here -->
         <%= form_for(@signup) do |f| %>  
   <div class="field"> 
-   <%= f.text_field :name %>
-   <%= f.text_field :email %>
-   <%= f.text_field :address %>
-   <%= f.text_field :phone %>
-   <%= f.text_field :zipcode %>
-     
-  
-  </div> 
+   <%= f.label :name %><br />
+   <%= f.text_field :name %><br />
+   <%= f.label :email %><br />
+   <%= f.text_field :email %><br />
+    <%= f.label :address %><br />
+   <%= f.text_field :address %><br />
+    <%= f.label :phone %><br />
+   <%= f.text_field :phone %><br />
+    <%= f.label :zipcode %><br />
+   <%= f.text_field :zipcode %><br />
+    <%= f.label :Image %><br />
+   <%= f.file_field :image %><br />
+       </div> 
   <div class="actions"> 
     <%= f.submit "Create" %> 
   </div> 

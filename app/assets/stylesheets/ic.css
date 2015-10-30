@@ -1,8 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-   background: url(img1.jpg) no-repeat center center; 
-  background-size: cover;
 }
 
 body {
@@ -14,6 +12,8 @@ body {
  
   height: 800px;
   text-align: center; 
+   background: url(img1.jpg) no-repeat left; 
+  background-size: 680px 780px;
 }
 
 .header .container {
@@ -22,11 +22,12 @@ body {
 }
 
 .header h1 {
-  color: #fff;
+  color: red;
   font-size: 120px;  
   line-height: 100px; 
-  margin-top: 0;
+  margin-top: 50;
   margin-bottom: 80px;
+  margin-left: 50px;
   text-transform: uppercase; 
 }
 
@@ -38,7 +39,7 @@ body {
 }
 
 .header p {
-  color: #fff;
+  color: red;
   font-weight: 500;
   letter-spacing: 8px;
   margin-bottom: 40px;
@@ -62,7 +63,7 @@ body {
 
 .nav {
   height: 80px;
-  background: #000;
+  background: #B8005C;
   margin: 0 auto; 
   padding: 0;
   text-align: center; 
@@ -84,35 +85,36 @@ body {
   cursor: pointer; 
   transition: background .5s;  
 }
-
+/*
 .main .container {
-  margin: 80px auto;
-}
+  margin: -10px, 10px;
+  background-color: lightpink;
 
+}*/
+/*
 .main img {
   float: left;
   margin: 50px 80px 50px 0;
 }
-
+*/
 .jumbotron {
-  /*background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
-  background-size: cover;*/
   height: 600px; 
+  background-color: #F9ECF2;
 }
 
 .jumbotron .container {
   position: relative;
-  top: 220px;
+  top: 20px;
 }
 
 .jumbotron h2 {
-  color: #fff;
-  text-align: right; 
+  color: darkpink;
+  text-align: left; 
 }
 
 .jumbotron p {
-  color: #fff; 
-  text-align: right; 
+  color: darkpink; 
+  text-align: left; 
 }
 
 .jumbotron .btn {
@@ -133,9 +135,9 @@ body {
   margin: 0;  
 }
 
-.jumbotron form {
-  text-align: right;
-}
+.jumbotron .field {
+  text-align: left ;
+ }
 
 .jumbotron input[type=submit] {
   border: none;
